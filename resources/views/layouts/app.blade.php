@@ -8,14 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Hi 日本</title>
+    <title>{{__('messages.title')}}</title>
 
     <!-- Styles -->
-    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/metisMenu.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/salon.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset( mix('css/app.css') ) }}" rel="stylesheet">
+    <link href="{{ asset( mix('css/proj.css') ) }}" rel="stylesheet">
     <style>
     .footer {
         position: absolute;
@@ -31,19 +28,12 @@
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                <span class="small">Copyright © 东京新青年 2018</span>
+                <span class="small">{{__('messages.footer_copyright')}}</span>
             </div>
         </div>
     </footer>
     <!-- Scripts -->
-    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.particleground.min.js') }}"></script>
-    <script src="{{ asset('js/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('js/salon.min.js') }}"></script>
-    <script src="{{ asset('js/raphael.min.js') }}"></script>
-    <script src="{{ asset('js/morris.min.js') }}"></script>
+    <script src="{{ asset( mix('js/app.js') ) }}"></script>
     <script src="{{ asset('js/morris-data.js') }}"></script>
     @yield('javascript')
 </body>

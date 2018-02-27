@@ -11,5 +11,21 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.scripts([
+      'bower_components/jquery/dist/jquery.js',
+      'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/particleground/jquery.particleground.js',
+      'bower_components/metisMenu/dist/metisMenu.js',
+      'bower_components/raphael/raphael.js',
+      'bower_components/morris.js/morris.js',
+      'resources/assets/js/proj.js'
+    ], 'public/js/app.js')
+   .styles([
+      'bower_components/bootstrap/dist/css/bootstrap.css',
+      'bower_components/metisMenu/dist/metisMenu.css',
+      'bower_components/font-awesome/css/font-awesome.css',
+    ], 'public/css/app.css')
+   .less('resources/assets/less/proj.less', 'public/css')
+   .copyDirectory('bower_components/bootstrap/dist/fonts', 'public/fonts')
+   .copyDirectory('bower_components/font-awesome/fonts', 'public/fonts')
+   .version();
