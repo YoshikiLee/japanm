@@ -4,6 +4,8 @@ return [
     'title' => 'Hi Japan',
     'footer_copyright' => 'Copyright © 東京新青年 2018',
 
+    'system_title' => 'APP後台管理系統',
+
     'dashboard_title' => '状態一覧',
     'order_title' => '訂単',
     'outlet_title' => '物産店',

@@ -6,7 +6,7 @@
     <div class="col-md-6 col-md-offset-3">
       <div class="login-panel panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title text-center">APP后台管理系统</h3>
+          <h3 class="panel-title text-center">{{__('messages.system_title')}}</h3>
         </div>
         <div class="panel-body">
           <form accept-charset="UTF-8" role="form" method="post" action="{{ route('login') }}">
